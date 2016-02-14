@@ -43,4 +43,3 @@ ro.qualcomm.sensors.smd=true
 
 # Wi-Fi
 wifi.interface=wlan0
-wifi.supplicant_scan_interval=180
