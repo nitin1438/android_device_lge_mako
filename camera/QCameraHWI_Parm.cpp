@@ -443,14 +443,15 @@ void QCameraHardwareInterface::filterPictureSizes(){
 
 static String8 create_sizes_str(const camera_size_type *sizes, int len) {
     String8 str;
-    char buffer[32];
+    int bufSize = 32;
+    char buffer[bufSize];
 
     if (len > 0) {
-        snprintf(buffer, sizeof(buffer), "%dx%d", sizes[0].width, sizes[0].height);
+        snprintf(buffer, bufSize, "%dx%d", sizes[0].width, sizes[0].height);
         str.append(buffer);
     }
     for (int i = 1; i < len; i++) {
-        snprintf(buffer, sizeof(buffer), ",%dx%d", sizes[i].width, sizes[i].height);
+        snprintf(buffer, bufSize, ",%dx%d", sizes[i].width, sizes[i].height);
         str.append(buffer);
     }
     return str;
@@ -3572,7 +3573,8 @@ status_t QCameraHardwareInterface::setPreviewSizeTable(void)
     struct camera_size_type* preview_size_table;
     int preview_table_size;
     int i = 0;
-    char str[10] = {0};
+    int strSize = 10;
+    char str[strSize];
 
     /* Initialize table with default values */
     preview_size_table = default_preview_sizes;
@@ -3604,7 +3606,7 @@ status_t QCameraHardwareInterface::setPreviewSizeTable(void)
         preview_size_table++;
     }
     //set preferred preview size to maximum preview size
-    sprintf(str, "%dx%d", preview_size_table->width, preview_size_table->height);
+    snprintf(str, strSize, "%dx%d", preview_size_table->width, preview_size_table->height);
     mParameters.set(QCameraParameters::KEY_PREFERRED_PREVIEW_SIZE_FOR_VIDEO, str);
     ALOGV("KEY_PREFERRED_PREVIEW_SIZE_FOR_VIDEO = %s", str);
 
