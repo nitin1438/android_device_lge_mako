@@ -9,11 +9,11 @@ unix_socket_send(mediaserver, mpdecision, mpdecision)
 allow mediaserver self:socket create_socket_perms;
 
 # For text relocations in /system/vendor/lib/libmmjpeg.so
-allow mediaserver system_file:file execmod;
+#allow mediaserver system_file:file execmod;
 
 allow mediaserver camera_device:chr_file { read write open ioctl };
 
-allow mediaserver default_prop:property_service { set };
+#allow mediaserver default_prop:property_service { set };
 
 allow mediaserver audio_device:chr_file { read write open ioctl };
 allow mediaserver camera_device:chr_file { read write open ioctl };
