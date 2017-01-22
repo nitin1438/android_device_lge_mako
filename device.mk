@@ -50,6 +50,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/lge/mako/audio_policy.conf:system/etc/audio_policy.conf
 
+
+# Use specific resolution for bootanimation
+SMALL_BOOTANIMATION_SIZE := 720x720
+
+# Custom APN
 PRODUCT_COPY_FILES += \
 	device/lge/mako/mixer_paths.xml:system/etc/mixer_paths.xml
 
