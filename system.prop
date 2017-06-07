@@ -6,6 +6,7 @@ persist.vendor.audio.fluence.voicerec=false
 persist.vendor.audio.fluence.speaker=false
 
 # Bluetooth
+ro.bluetooth.hfp.ver=1.6
 ro.qualcomm.bt.hci_transport=smd
 
 # Camera
