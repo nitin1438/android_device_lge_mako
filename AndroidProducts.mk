@@ -16,5 +16,5 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_mako.mk \
-    $(LOCAL_DIR)/nitrogen_mako.mk \
+    $(LOCAL_DIR)/aoscp.mk \
     $(LOCAL_DIR)/full_mako.mk

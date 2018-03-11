@@ -1,0 +1,20 @@
+[
+ {
+   "repository":  "unlegacy-android/android_kernel_qcom_msm8960",
+   "target_path": "kernel/qcom/msm8960",
+   "branch":      "stable",
+   "remote":      "github"
+ },
+ {
+   "repository":  "unlegacy-android/proprietary_vendor_qcom",
+   "target_path": "vendor/qcom",
+   "branch":      "aosp-8.1",
+   "remote":      "aop-8.1"
+ },
+ {
+   "repository":  "unlegacy-android/proprietary_vendor_lge",
+   "target_path": "vendor/lge",
+   "branch":      "aosp-8.1",
+   "remote":      "github"
+ }
+]

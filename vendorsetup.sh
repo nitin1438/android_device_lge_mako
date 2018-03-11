@@ -14,4 +14,5 @@
 # limitations under the License.
 #
 
-add_lunch_combo nitrogen_mako-userdebug
+add_lunch_combo aoscp_mako-userdebug
+
