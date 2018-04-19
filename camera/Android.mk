@@ -51,10 +51,10 @@ LOCAL_SRC_FILES := \
 
 LOCAL_C_INCLUDES += \
     $(LOCAL_PATH)/mm-camera-interface \
-    $(call project-path-for,qcom-media)/mm-core/inc \
-    $(call project-path-for,qcom-media)/libstagefrighthw \
-    $(call project-path-for,qcom-display)/libgralloc \
-    $(call project-path-for,qcom-display)/libgenlock \
+    hardware/qcom/media/msm8960/mm-core/inc \
+    hardware/qcom/display/msm8960/libgralloc \
+    hardware/qcom/display/msm8960/libgenlock \
+    hardware/qcom/media/msm8960/libstagefrighthw \
     frameworks/native/include/media/hardware
 
 # Kernel headers
