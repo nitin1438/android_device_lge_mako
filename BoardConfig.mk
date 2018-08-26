@@ -50,6 +50,9 @@ TARGET_USES_64_BIT_BINDER := true
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 17
 
+# Security patch level
+VENDOR_SECURITY_PATCH := 2015-09-08
+
 # QCOM hardware
 BOARD_USES_QCOM_HARDWARE := true
 
