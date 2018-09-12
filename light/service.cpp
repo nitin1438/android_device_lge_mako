@@ -20,6 +20,10 @@
 #include <hidl/HidlTransportSupport.h>
 #include <utils/Errors.h>
 
+#ifdef ARCH_ARM_32
+#include <hwbinder/ProcessState.h>
+#endif
+
 #include "Light.h"
 
 // libhwbinder:
@@ -41,6 +45,9 @@ const static std::string kLedPwmPath = "/sys/class/leds/red/device/grppwm";
 const static std::string kLedLockPath = "/sys/class/leds/red/device/lock";
 
 int main() {
+#ifdef ARCH_ARM_32
+    android::hardware::ProcessState::initWithMmapSize((size_t)(32768));
+#endif
     uint32_t lcdMaxBrightness = 255;
     std::vector<std::ofstream> buttonBacklight;
 
