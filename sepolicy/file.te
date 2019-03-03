@@ -11,5 +11,4 @@ type persist_wifi_file, file_type;
 type sysfs_msm_subsys, fs_type, sysfs_type;
 type sysfs_soc, fs_type, sysfs_type;
 type sysfs_kcal, fs_type, sysfs_type;
-type proc_wakelocks, fs_type, proc_type;
 type debugfs_kgsl, debugfs_type, fs_type;

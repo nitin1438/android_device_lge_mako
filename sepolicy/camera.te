@@ -19,7 +19,6 @@ allow camera camera_socket:sock_file create_file_perms;
 
 type_transition camera system_data_file:file camera_data_file "fdAlbum";
 allow camera camera_data_file:file create_file_perms;
-
 allow camera gpu_device:chr_file rw_file_perms;
 
 # Connect to sensor socket

@@ -1,11 +1,5 @@
-# GPU device (world r/w)
-/dev/kgsl                              u:object_r:gpu_device:s0
-
 # NFC
 /dev/bcm2079x-i2c                      u:object_r:nfc_device:s0
-
-# CPU governor controls
-/dev/socket/mpdecision(/.*)?           u:object_r:mpdecision_socket:s0
 
 ## Radio related
 # high speed inter-chip controls
@@ -51,15 +45,18 @@
 /dev/block/platform/msm_sdcc\.1/by-name/misc        u:object_r:misc_block_device:s0
 /dev/block/platform/msm_sdcc\.1/by-name/persist     u:object_r:persist_block_device:s0
 
+# Sockets
 /dev/socket/qcamera(/.*)?              u:object_r:camera_socket:s0
 /dev/socket/sensors(/.*)?              u:object_r:sensors_socket:s0
 
 # DRM
 /data/misc/playready(/.*)?             u:object_r:drm_data_file:s0
 
+# Sensors and Kickstart
 /data/vendor/qcks(/.*)?                u:object_r:kickstart_vendor_data_file:s0
 /data/vendor/sensors(/.*)?             u:object_r:sensors_vendor_data_file:s0
 
+# Binary executables
 /system/vendor/bin/conn_init           u:object_r:conn_init_exec:s0
 /system/vendor/bin/hci_qcomm_init      u:object_r:hci_attach_exec:s0
 /system/vendor/bin/mm-qcamera-daemon   u:object_r:camera_exec:s0
@@ -70,16 +67,15 @@
 /system/vendor/bin/sensors\.qcom       u:object_r:sensors_exec:s0
 /system/vendor/bin/thermald            u:object_r:thermald_exec:s0
 /system/vendor/bin/bdAddrLoader        u:object_r:bluetooth_loader_exec:s0
-
-/system/vendor/bin/init\.mako\.bt\.sh      u:object_r:bluetooth_loader_exec:s0
-/system/vendor/bin/init\.mako\.wifi\.sh    u:object_r:conn_init_exec:s0
-
-/system/vendor/bin/init\.qcom\.devstart\.sh    u:object_r:init-qcom-devstart-sh_exec:s0
-/system/vendor/bin/init\.qcom\.devwait\.sh     u:object_r:init-qcom-devwait-sh_exec:s0
-
 /system/vendor/bin/efsks               u:object_r:kickstart_exec:s0
 /system/vendor/bin/ks                  u:object_r:kickstart_exec:s0
 /system/vendor/bin/qcks                u:object_r:kickstart_exec:s0
+
+# Scripts
+/system/vendor/bin/init\.mako\.bt\.sh          u:object_r:bluetooth_loader_exec:s0
+/system/vendor/bin/init\.mako\.wifi\.sh        u:object_r:conn_init_exec:s0
+/system/vendor/bin/init\.qcom\.devstart\.sh    u:object_r:init-qcom-devstart-sh_exec:s0
+/system/vendor/bin/init\.qcom\.devwait\.sh     u:object_r:init-qcom-devwait-sh_exec:s0
 
 # Binderized power HAL
 /system/vendor/bin/hw/android\.hardware\.power@1\.0-service.mako     u:object_r:hal_power_default_exec:s0
