@@ -7,4 +7,3 @@ rm /data/misc/wifi/WCNSS_qcom_wlan_nv.bin
 /vendor/bin/conn_init
 
 echo 1 > /dev/wcnss_wlan
-
