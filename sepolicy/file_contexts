@@ -43,7 +43,6 @@
 /dev/block/platform/msm_sdcc\.1/by-name/userdata    u:object_r:userdata_block_device:s0
 /dev/block/platform/msm_sdcc\.1/by-name/metadata    u:object_r:metadata_block_device:s0
 /dev/block/platform/msm_sdcc\.1/by-name/misc        u:object_r:misc_block_device:s0
-/dev/block/platform/msm_sdcc\.1/by-name/persist     u:object_r:persist_block_device:s0
 
 # Sockets
 /dev/socket/qcamera(/.*)?              u:object_r:camera_socket:s0
