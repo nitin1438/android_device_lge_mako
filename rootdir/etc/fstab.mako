@@ -4,11 +4,11 @@
 # specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
 /dev/block/platform/msm_sdcc.1/by-name/system       /system         ext4    ro,barrier=1                                                                   wait
-/dev/block/platform/msm_sdcc.1/by-name/cache        /cache          ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,errors=panic       latemount,wait,check,formattable
-/dev/block/platform/msm_sdcc.1/by-name/cache        /cache          f2fs    rw,nosuid,nodev,noatime,inline_xattr                                           latemount,wait,check,formattable
-/dev/block/platform/msm_sdcc.1/by-name/userdata     /data           ext4    noatime,nosuid,nodev,barrier=1,data=ordered,noauto_da_alloc,errors=panic       latemount,wait,check,formattable,encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
-/dev/block/platform/msm_sdcc.1/by-name/userdata     /data           f2fs    rw,nosuid,nodev,noatime,inline_xattr                                           latemount,wait,check,formattable,encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
-/dev/block/platform/msm_sdcc.1/by-name/persist      /persist        ext4    nosuid,nodev,barrier=1,data=ordered,nodelalloc                                 wait
+/dev/block/platform/msm_sdcc.1/by-name/userdata     /data           ext4    rw,nosuid,nodev,noatime,noauto_da_alloc,nobarrier                              wait,check,formattable,latemount,encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
+/dev/block/platform/msm_sdcc.1/by-name/userdata     /data           f2fs    rw,nosuid,nodev,noatime,inline_xattr                                           wait,check,formattable,latemount,encryptable=/dev/block/platform/msm_sdcc.1/by-name/metadata
+/dev/block/platform/msm_sdcc.1/by-name/cache        /cache          ext4    rw,noatime,nosuid,nodev,barrier=1,data=ordered                                 wait,check,formattable
+/dev/block/platform/msm_sdcc.1/by-name/cache        /cache          f2fs    rw,nosuid,nodev,noatime,inline_xattr                                           wait,check,formattable
+/dev/block/platform/msm_sdcc.1/by-name/persist      /persist        ext4    rw,nosuid,nodev,noatime,barrier=1                                              wait,check,notrim
 /dev/block/platform/msm_sdcc.1/by-name/modem        /firmware       vfat    ro,uid=1000,gid=1000,dmask=227,fmask=337,context=u:object_r:radio_efs_file:s0  wait
 /dev/block/platform/msm_sdcc.1/by-name/boot         /boot           emmc    defaults                                                                       defaults
 /dev/block/platform/msm_sdcc.1/by-name/recovery     /recovery       emmc    defaults                                                                       defaults
