@@ -16,10 +16,5 @@ allow sensors power_control_device:chr_file w_file_perms;
 # Access /sys/devices/system/soc/soc0
 r_dir_file(sensors, sysfs_soc)
 
-# Access to /persist/sensors
-allow sensors persist_file:dir r_dir_perms;
-allow sensors persist_sensors_file:dir r_dir_perms;
-allow sensors persist_sensors_file:file rw_file_perms;
-
 # Wake lock access
 wakelock_use(sensors)
