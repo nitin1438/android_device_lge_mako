@@ -1,11 +1,6 @@
 # Audio
-audio.offload.disable=1
-mm.enable.smoothstreaming=true
-ro.vendor.audio.sdk.fluencetype=fluence
-persist.vendor.audio.fluence.voicecall=true
-persist.vendor.audio.fluence.voicerec=false
-persist.vendor.audio.fluence.speaker=false
-qcom.hw.aac.encoder=true
+persist.audio.dualmic.config=endfire
+persist.audio.fluence.voicecall=true
 media.aac_51_output_enabled=true
 
 # Bluetooth
