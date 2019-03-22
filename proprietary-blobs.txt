@@ -104,7 +104,6 @@ vendor/lib/egl/libGLESv1_CM_adreno.so
 vendor/lib/egl/libGLESv2_adreno.so
 vendor/lib/egl/libq3dtools_adreno.so
 vendor/lib/libadreno_utils.so
-vendor/lib/libbccQTI.so|7cd380e1ce6c80fa57bec7d9f81f7826382ccea7
 vendor/lib/libC2D2.so
 vendor/lib/libc2d30-a3xx.so
 vendor/lib/libCB.so
@@ -114,8 +113,5 @@ vendor/lib/libizat_core.so
 vendor/lib/libllvm-qcom.so
 vendor/lib/libloc_api_v02.so
 vendor/lib/libloc_ds_api.so
-vendor/lib/librs_adreno_sha1.so|be8a817743950dac6e22b50cbd9657c2d35c35f2
-vendor/lib/librs_adreno.so|bb1d5cb84f14ed18fcbfb4815692cb196e44f180
-vendor/lib/libRSDriver_adreno.so|ee3386248adfa7d1a8c1107e051bcbbd3e8df0c1
 vendor/lib/libsc-a3xx.so
 vendor/lib/mediadrm/libwvdrmengine.so|66ba66d047044f92eb0eada1faf6a5799ded90ab
