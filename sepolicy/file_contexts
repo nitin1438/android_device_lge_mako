@@ -77,8 +77,9 @@
 /system/vendor/bin/init\.qcom\.devstart\.sh    u:object_r:init-qcom-devstart-sh_exec:s0
 /system/vendor/bin/init\.qcom\.devwait\.sh     u:object_r:init-qcom-devwait-sh_exec:s0
 
-# Binderized power HAL
-/system/vendor/bin/hw/android\.hardware\.power@1\.0-service.mako     u:object_r:hal_power_default_exec:s0
+# Binderized HAL's
+/system/vendor/bin/hw/android\.hardware\.light@2\.0-service\.mako     u:object_r:hal_light_default_exec:s0
+/system/vendor/bin/hw/android\.hardware\.power@1\.0-service\.mako     u:object_r:hal_power_default_exec:s0
 
 # Persist firmware filesystem
 /persist/playready(/.*)?               u:object_r:persist_drm_file:s0

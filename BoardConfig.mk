@@ -84,9 +84,6 @@ WIFI_DRIVER_FW_PATH_AP  := "ap"
 TARGET_USES_ION := true
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS := 0x02000000U
 
-# Lights
-TARGET_PROVIDES_LIBLIGHT := true
-
 # Dexpreopt
 # Enable dex-preoptimization to speed up first boot sequence
 ifeq ($(HOST_OS),linux)
