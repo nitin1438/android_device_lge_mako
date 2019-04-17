@@ -15,7 +15,7 @@ allow kickstart efsbridgehsic_device:chr_file rw_file_perms;
 allow kickstart ksbridgehsic_device:chr_file rw_file_perms;
 
 # Read and write to /dev/block/mmcblk0p[89]
-allow kickstart efs_block_device:blk_file rw_file_perms;
+allow kickstart efs_boot_dev:blk_file rw_file_perms;
 allow kickstart block_device:dir { getattr write search };
 
 # Write contents of block device to kickstart data dir

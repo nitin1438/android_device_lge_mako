@@ -10,9 +10,6 @@ allow sensors sensors_vendor_data_file:file create_file_perms;
 # Access sensor nodes (/dev/msm_dsps)
 allow sensors sensors_device:chr_file rw_file_perms;
 
-# Access power management controls
-allow sensors power_control_device:chr_file w_file_perms;
-
 # Access /sys/devices/system/soc/soc0
 r_dir_file(sensors, sysfs_soc)
 
