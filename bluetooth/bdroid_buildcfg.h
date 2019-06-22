@@ -1,5 +1,7 @@
 /*
  * Copyright (C) 2012 The Android Open Source Project
+ * Copyright (C) 2013-2016 The CyanogenMod Project
+ * Copyright (C) 2017-2019 The LineageOS Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -19,9 +21,13 @@
 
 #define BTM_DEF_LOCAL_NAME   "Nexus 4"
 
-#define SC_MODE_INCLUDED FALSE
-
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
-#define BTA_HOST_INTERLEAVE_SEARCH TRUE
-#define BTA_SKIP_BLE_READ_REMOTE_FEAT TRUE
+#define SC_MODE_INCLUDED FALSE
+#define SDP_DEBUG FALSE
+#define BTSNOOP_MEM FALSE
+#define BLE_PRIVACY_SPT FALSE
+#define BTM_SCO_ENHANCED_SYNC_ENABLED FALSE
+#define BTM_WBS_INCLUDED TRUE /* Enable WBS */
+#define BTIF_HF_WBS_PREFERRED FALSE /* Do not prefer WBS */
+
 #endif
