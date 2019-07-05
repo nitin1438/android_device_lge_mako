@@ -143,19 +143,7 @@ EXCLUDE_SERIF_FONTS := true
 SMALLER_FONT_FOOTPRINT := true
 
 # Recovery
-# RECOVERY_VARIANT := twrp
-
-ifeq ($(RECOVERY_VARIANT),twrp)
-TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/recovery/twrp.fstab
-BOARD_HAS_NO_REAL_SDCARD := true
-TW_THEME := portrait_hdpi
-RECOVERY_SDCARD_ON_DATA := true
-TW_INPUT_BLACKLIST := "hbtp_vm"
-TW_EXTRA_LANGUAGES := true
-TW_INCLUDE_CRYPTO := true
-else
-TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/recovery/fstab.mako
-endif
+TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.mako
 
 # Device manifest
 DEVICE_MANIFEST_FILE := $(PLATFORM_PATH)/manifest.xml
