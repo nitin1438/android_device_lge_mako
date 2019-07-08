@@ -11,7 +11,7 @@ allow sensors sensors_vendor_data_file:file create_file_perms;
 allow sensors sensors_device:chr_file rw_file_perms;
 
 # Access /sys/devices/system/soc/soc0
-r_dir_file(sensors, sysfs_soc)
+r_dir_file(sensors, sysfs_socinfo)
 
 # Wake lock access
 wakelock_use(sensors)

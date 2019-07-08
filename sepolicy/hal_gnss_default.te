@@ -1,6 +1,6 @@
 vndbinder_use(hal_gnss_default)
 
-r_dir_file(hal_gnss_default, sysfs_soc)
+r_dir_file(hal_gnss_default, sysfs_socinfo)
 
 # Access /dev/mdm
 allow hal_gnss_default mdm_device:chr_file r_file_perms;
