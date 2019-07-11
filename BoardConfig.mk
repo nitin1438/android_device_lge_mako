@@ -140,7 +140,6 @@ JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(PLATFORM_PATH)/lineagehw|**/*.j
 
 # Fonts
 EXCLUDE_SERIF_FONTS := true
-SMALLER_FONT_FOOTPRINT := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.mako
