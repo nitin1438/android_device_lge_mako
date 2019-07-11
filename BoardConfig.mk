@@ -138,9 +138,6 @@ TARGET_NEEDS_PLATFORM_TEXT_RELOCATIONS := true
 # LineageOS Hardware
 JAVA_SOURCE_OVERLAYS := org.lineageos.hardware|$(PLATFORM_PATH)/lineagehw|**/*.java
 
-# Fonts
-EXCLUDE_SERIF_FONTS := true
-
 # Recovery
 TARGET_RECOVERY_FSTAB := $(PLATFORM_PATH)/rootdir/etc/fstab.mako
 
