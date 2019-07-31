@@ -118,6 +118,10 @@
     <ctl name="HDMI_RX Channels" value="Two" />
     <ctl name="Internal BTSCO SampleRate" value="8000" />
 
+    <!-- echo reference -->
+    <ctl name="EC_REF_RX" value="NONE" />
+    <!-- echo reference end -->
+
     <!-- These are audio route (FE to BE) specific mixer settings -->
     <path name="deep-buffer-playback">
         <ctl name="SLIMBUS_0_RX Audio Mixer MultiMedia1" value="1" />
@@ -295,6 +299,10 @@
         <ctl name="ADC2 Volume" value="2" />
     </path>
 
+    <path name="voice-handset">
+        <path name="handset" />
+    </path>
+
     <path name="voice-handset-tmus">
         <path name="handset" />
     </path>
@@ -354,6 +362,10 @@
     <path name="bt-sco-mic">
     </path>
 
+    <path name="echo-reference">
+        <ctl name="EC_REF_RX" value="SLIM_RX" />
+    </path>
+
     <!-- Dual MIC devices -->
     <path name="dmic-endfire">
         <ctl name="SLIM TX7 MUX" value="DEC7" />
@@ -391,6 +403,14 @@
         <ctl name="SLIM TX8 MUX" value="DEC8" />
         <ctl name="DEC8 MUX" value="DMIC2" />
         <ctl name="SLIM_0_TX Channels" value="Two" />
+    </path>
+
+    <path name="handset-stereo-dmic-ef">
+        <path name="dmic-endfire" />
+    </path>
+
+    <path name="speaker-stereo-dmic-ef">
+        <path name="speaker-dmic-endfire" />
     </path>
 
     <path name="voice-dmic-ef-tmus">
