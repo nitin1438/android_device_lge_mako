@@ -1,0 +1,2 @@
+allow wcnss_service persist_wifi_file:dir search;
+allow wcnss_service persist_wifi_file:file r_file_perms;

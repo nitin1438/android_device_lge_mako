@@ -46,3 +46,5 @@
 /dev/block/mmcblk0p9      0660   system     system
 /dev/ks_hsic_bridge       0660   system     system
 /dev/efs_hsic_bridge      0660   system     system
+/dev/wcnss_wlan           0660   system     system
+/dev/wcnss_ctrl           0660   system     system

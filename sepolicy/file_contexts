@@ -56,7 +56,6 @@
 /data/vendor/sensors(/.*)?             u:object_r:sensors_vendor_data_file:s0
 
 # Binary executables
-/system/vendor/bin/conn_init           u:object_r:conn_init_exec:s0
 /system/vendor/bin/hci_qcomm_init      u:object_r:hci_attach_exec:s0
 /system/vendor/bin/mm-qcamera-daemon   u:object_r:camera_exec:s0
 /system/vendor/bin/mpdecision          u:object_r:mpdecision_exec:s0
@@ -72,7 +71,6 @@
 
 # Scripts
 /system/vendor/bin/init\.mako\.bt\.sh          u:object_r:bluetooth_loader_exec:s0
-/system/vendor/bin/init\.mako\.wifi\.sh        u:object_r:conn_init_exec:s0
 /system/vendor/bin/init\.qcom\.devstart\.sh    u:object_r:init-qcom-devstart-sh_exec:s0
 /system/vendor/bin/init\.qcom\.devwait\.sh     u:object_r:init-qcom-devwait-sh_exec:s0
 
