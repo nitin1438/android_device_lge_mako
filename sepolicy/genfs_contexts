@@ -8,14 +8,6 @@ genfscon sysfs /devices/platform/kgsl-3d0.0/kgsl/kgsl-3d0/reset_count           
 genfscon sysfs /devices/virtual/graphics/fb1                                     u:object_r:sysfs_graphics:s0
 genfscon sysfs /devices/virtual/graphics/fb2                                     u:object_r:sysfs_graphics:s0
 
-# KCAL
-genfscon sysfs /devices/platform/kcal_ctrl.0/kcal                                u:object_r:sysfs_kcal:s0
-genfscon sysfs /devices/platform/kcal_ctrl.0/kcal_ctrl                           u:object_r:sysfs_kcal:s0
-genfscon sysfs /devices/platform/mipi_lgit.1537/kgamma_r                         u:object_r:sysfs_kcal:s0
-genfscon sysfs /devices/platform/mipi_lgit.1537/kgamma_g                         u:object_r:sysfs_kcal:s0
-genfscon sysfs /devices/platform/mipi_lgit.1537/kgamma_b                         u:object_r:sysfs_kcal:s0
-genfscon sysfs /devices/platform/mipi_lgit.1537/kgamma_apply                     u:object_r:sysfs_kcal:s0
-
 # Thermal
 genfscon sysfs /devices/platform/msm_ssbi.0/pm8921-core/pm8xxx-adc/batt_therm    u:object_r:sysfs_thermal:s0
 genfscon sysfs /module/pm8921_charger/parameters/thermal_mitigation              u:object_r:sysfs_thermal:s0

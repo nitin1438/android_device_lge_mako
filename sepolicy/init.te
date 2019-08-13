@@ -12,7 +12,6 @@ allow init {
 allow init {
     proc_slabinfo
     sysfs_graphics
-    sysfs_kcal
     sysfs_msm_subsys
     sysfs_usb
     sysfs_wlan_fwpath
