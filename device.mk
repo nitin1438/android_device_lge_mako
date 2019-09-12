@@ -243,6 +243,9 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     sensors.msm8960
 
+# Shipping API
+PRODUCT_SHIPPING_API_LEVEL := 17
+
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermald-mako.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald.conf
