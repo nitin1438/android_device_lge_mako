@@ -248,9 +248,9 @@
 
     <!-- Values for GPS configuration -->
     <string-array translatable="false" name="config_gpsParameters">
-        <item>XTRA_SERVER_1=https://xtrapath1.izatcloud.net/xtra2.bin</item>
-        <item>XTRA_SERVER_2=https://xtrapath2.izatcloud.net/xtra2.bin</item>
-        <item>XTRA_SERVER_3=https://xtrapath3.izatcloud.net/xtra2.bin</item>
+        <item>XTRA_SERVER_1=http://xtra1.gpsonextra.net/xtra2.bin</item>
+        <item>XTRA_SERVER_2=http://xtra2.gpsonextra.net/xtra2.bin</item>
+        <item>XTRA_SERVER_3=http://xtra3.gpsonextra.net/xtra2.bin</item>
         <item>NTP_SERVER=1.android.pool.ntp.org</item>
         <item>SUPL_ES=1</item>
         <item>SUPL_HOST=supl.google.com</item>
