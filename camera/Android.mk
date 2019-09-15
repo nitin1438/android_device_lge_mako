@@ -58,9 +58,7 @@ LOCAL_C_INCLUDES += \
     frameworks/native/include/media/hardware
 
 # Kernel headers
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
-LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include/media
-LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
+LOCAL_HEADER_LIBRARIES := generated_kernel_headers
 
 LOCAL_SHARED_LIBRARIES := libutils libui libcamera_client libcamera_metadata liblog libcutils libbinder libnativewindow
 LOCAL_SHARED_LIBRARIES += libgenlock libmmcamera_interface
