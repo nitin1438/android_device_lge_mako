@@ -14,6 +14,11 @@ vendor/firmware/a300_pfp.fw
 vendor/firmware/a300_pm4.fw
 vendor/firmware/bcm2079x_firmware.ncd
 vendor/firmware/bcm2079x_pre_firmware.ncd
+vendor/firmware/discretix/dxhdcp2.b00
+vendor/firmware/discretix/dxhdcp2.b01
+vendor/firmware/discretix/dxhdcp2.b02
+vendor/firmware/discretix/dxhdcp2.b03
+vendor/firmware/discretix/dxhdcp2.mdt
 vendor/firmware/dsps.b00
 vendor/firmware/dsps.b01
 vendor/firmware/dsps.b02
@@ -63,6 +68,7 @@ vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so
 vendor/lib/libdsi_netctrl.so
 vendor/lib/libdsutils.so
+vendor/lib/libDxHdcp.so|f591836648785c5334d71e7d4c265f0e3a2b83dc
 vendor/lib/libgemini.so
 vendor/lib/libidl.so
 vendor/lib/libimage-jpeg-dec-omx-comp.so
@@ -98,6 +104,7 @@ vendor/lib/libril-qc-qmi-1.so
 vendor/lib/libril-qcril-hook-oem.so
 vendor/lib/libsensor1.so|60b15d4618bf509916e106df5947fe021d0f9de5
 vendor/lib/libsensor_reg.so
+vendor/lib/libstagefright_hdcp.so
 vendor/lib/egl/eglsubAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
